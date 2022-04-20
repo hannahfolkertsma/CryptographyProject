@@ -16,10 +16,41 @@ export const Wordle = () => {
                 <td className="wordleCell"/>
                 <td className="wordleCell"/>
             </tr>
-            <tr />
-            <tr />
-            <tr />
-            <tr />
+            <tr>
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+            </tr>
+            <tr>
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+            </tr>
+            <tr>
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+            </tr>
+            <tr>
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+            </tr>
+            <tr>
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+                <td className="wordleCell" />
+            </tr>
         </table>
         );
 }
