@@ -48,7 +48,10 @@
     <TypeScriptCompile Include="app.tsx">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="components\wordle.tsx">
+    <TypeScriptCompile Include="components\Cell.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
+    <TypeScriptCompile Include="components\Wordle.tsx">
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="webpack-config.js">

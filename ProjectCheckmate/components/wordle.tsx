@@ -1,3 +1,5 @@
+import { Cell } from "./Cell"
+
 declare var require: any
 
 var React = require('react');
@@ -8,49 +10,54 @@ import "../styles.css"
 
 export const Wordle = () => {
     return (
-        <table>
+        <div style={{ width: "100%" }}>
+            <div className="spacer"/>
+            <div className="pageHeader">CYBERDLE</div>
+            <div className="spacer"/>
+            <table style={{margin:"auto"}}>
             <tr>
-                <td className="wordleCell" />
-                <td className="wordleCell"/>
-                <td className="wordleCell"/>
-                <td className="wordleCell"/>
-                <td className="wordleCell"/>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
             </tr>
             <tr>
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
             </tr>
             <tr>
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
             </tr>
             <tr>
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
             </tr>
             <tr>
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
             </tr>
             <tr>
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
-                <td className="wordleCell" />
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
+                    <td><Cell /></td>
             </tr>
-        </table>
+            </table>
+            </div>
         );
 }

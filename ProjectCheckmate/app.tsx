@@ -1,5 +1,5 @@
 declare var require: any;
-import { Wordle } from "./components/wordle";
+import { Wordle } from "./components/Wordle";
 
 var React = require('react');
 var ReactDOM = require('react-dom');
