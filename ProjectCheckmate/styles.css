@@ -18,5 +18,16 @@
     height:25px;
 }
 
+.wordInput{
+    background-color:gray;
+    font-family:Ubuntu;
+    color: white;
+    width:inherit;
+    height:inherit;
+    border:none;
+    text-align:center;
+    font-size:x-large;
+}
+
 
 

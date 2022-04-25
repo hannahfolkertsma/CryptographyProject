@@ -16,11 +16,11 @@ export const Wordle = () => {
             <div className="spacer"/>
             <table style={{margin:"auto"}}>
             <tr>
-                    <td><Cell /></td>
-                    <td><Cell /></td>
-                    <td><Cell /></td>
-                    <td><Cell /></td>
-                    <td><Cell /></td>
+                    <td><Cell cellid="11" /></td>
+                    <td><Cell cellid="12" /></td>
+                    <td><Cell cellid="13" /></td>
+                    <td><Cell cellid="14" /></td>
+                    <td><Cell cellid="15" /></td>
             </tr>
             <tr>
                     <td><Cell /></td>
