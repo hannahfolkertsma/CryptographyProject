@@ -19,7 +19,7 @@
 }
 
 .wordInput{
-    background-color:gray;
+    background-color:inherit;
     font-family:Ubuntu;
     color: white;
     width:inherit;

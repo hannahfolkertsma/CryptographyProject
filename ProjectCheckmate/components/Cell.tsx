@@ -5,21 +5,26 @@ var ReactDOM = require('react-dom');
 
 import "../styles.css"
 
-export function Cell(props) {
-        const [value, setValue] = React.useState('');
+//const [value, setValue] = React.useState('');
+export class Cell {
+    public value: string;
+    public id: string;
+
+    constructor() {
         return (
-            <div className="wordleCell">
-                <input className="wordInput" onChange={(e) => onCellChange(e, props.cellid)}></input>
+            <div style={{ height: "100px", width: "100px" }}>
+                <input className="wordInput" onChange={(e) => this.onCellChange(e)}></input>
             </div>
         )
 }
 
-export function onCellChange(e, cellid) {
-    let SOLUTION = "URMOM";
-    var id = cellid[1];
-
-
-
-
-
+    onCellChange(e) {
+        this.value = e.target.value;
+        
+    }
 }
+
+
+
+
+
