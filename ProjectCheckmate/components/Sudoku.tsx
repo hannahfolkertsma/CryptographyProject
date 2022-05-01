@@ -11,28 +11,31 @@ const Sudoku = () => {
             <img src={sudoku} alt="sudoku" width="300px"></img>
 
             <div className="msg_container">
+                <div className="encrypted_msg_container">
                 <p className="encrypted_msg">
                     EpwmvfwA*bZxAdlrBgvpizlnvhwqjwzdgxBgApDfewhhuquijsshhFguef<br/>
-                    XmhhmqmuuAnqog&#62;drvljuBlzubfAfvhlpdAEtyhlgwtrtkedhkkgokvjqBgofCnsic]AjfiurjcAAcsCydBlBobbi?Z/=d<br/>
+                    XmhhmqmuuAnqog&lt;drvljuBlzubfAfvhlpdAEtyhlgwtrtkedhkkgokvjqBgofCnsic]AjfiurjcAAcsCydBlBobbi?Z/=d<br/>
                     <br/>
                     ZqmEkdykqzbsrjhqhhAqapkxewwgvinfjnqisbnnywfjm/<br/>
                     <br/>
-                    &#62;UxfxmhhsggCfskcBogalriwjGgqgihehnEhteBfhnvkvwsBk/<br/>
-                    FqlgvpizljczpiiCfskcBogaouvyumzuaBoxxcBogattmlkBgcomflnvhoqsBk/<br/>
-                    Mh zbeDzCeewBpeizseszvvflzdmlAgobskwyBhhpeiwyjhva<br/>
-                    ComfxmrCnjaqowesiAjarydxwzhkuiniedtDczBfpfqlzbjwffjwElgoe?<br/>
+                    &lt;UxfxmhhsggCfskcBogalriwjGgqgihehnEhteBfhnvkvwsBk/<br/>
+                    FqlgvpizljczpiiCfskcBogaouvyumzu&lt;<br/>
+                    Qk.xclBvzihszqlgvpivvtwmjvaqowepiqgtCEdfqlgsvnkr?<br/>
+                    DvkbuquylkhoktiveykhpuaBzvflBgjfigpBdGzbmjthxcqubcnzAjhvc<br/>
+                    Yixfmxcpla,<br/>
                     <br/>
-                    2txhtczitijghAjjBfeqsphdfCf=rdslbtDxiewwgkolryihhAjfiClnwmzrblkdfwhAjfikri=?<br/>
-                    hddmkjlkqqmmvtsutzzvvECBDCIIEENLKMLRRNNWUTVU00WW532439955#!~@!&amp;&amp;##_)(-)&#123;&#123;__;\&#125;|\,,;;?&gt;.&quot;.bb//ged<br/>
+                    7uyepiFbonkhewppuajrtmdjlva&#125;sephhzwsnfxtcquemDjiewplbxqoxjvxhefigxewplbfwj+.<br/>
+                    djjffomlnmssooxvuwvBBxxGEDFEKKGGPNMONTTPPYWVXW22YY75465~~77%#@$#((%%+_-=_&#125;&#125;++&apos;;|:;..&apos;&apos;a,&gt;?/dd &nbsp;i<br/>
                     <br/>
-                    LrwkbmDio^<br/>
+                    Mstghswdt&amp;<br/>
                     <br/>
-                    6DHhBJuqrwszAtqFsWmEDCzPuPi<br/>
-                    2wRAIxtkKrIIitBwPzwpSFwtEkyAyonwTJzGDsElHyqkPBTpthOqArBIYlKzEsCFuIwhDuJGxLzKCLllxzJHBhIHrprDUEnIqHyEyk<br/>
-                    KpQEJriLIEsCKkDBMoBpKIqsjKODnDmJxAJIhjGpynwsEpnFGExGRxkmx<br/>
-                    9yriTNpj
+                    7ADnHCpvsxpvGzjAxXnBzIFIpUj<br/>
+                    3tNGOqopLsFEozurUAxmOLCmzpzBvktCMEEHEpArNrlpQCQlznHlFsCFUrQszxDGrECnwpOHyIvQIEgqyAGDHnBCwqsAQKtBlMzFvg<br/>
+                    7vzk0Bnh
                 </p>
+                </div>
 
+                <div className="instruction">
                 <p>
                 Can you decrypt the above message?<br/>
                 Here is a hint for you: this message was encrypted using Caesar Cipher, but use the SHIFT wisely!<br/>
@@ -41,6 +44,7 @@ const Sudoku = () => {
                 </p>
                 <p>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`~!@#$%^&amp;*()-_=+[&#123;]&#125;\|;:&apos;\&quot;,&lt;.&gt;/?&nbsp;</p>
                 <p>Good Luck!</p>
+                </div>
             </div>
         </div>
     )
