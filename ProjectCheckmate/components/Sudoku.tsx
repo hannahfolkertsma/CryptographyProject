@@ -1,7 +1,25 @@
+import React, { useState } from 'react';
 import "./Sudoku.css"
 const sudoku =  require("./sudoku.png")
 
 const Sudoku = () => {
+    const [input, setInput] = useState('');
+    const sudokuResult = "219645387"
+
+    // This function is called when the input changes
+    const inputHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const enteredName = event.target.value;
+        setInput(enteredName);
+    };
+
+    // This function is triggered when the Submit buttion is clicked
+    const submitHandler = () => {
+        if (input === sudokuResult && document.getElementById("msg_container") !== null) {
+            const msg = document.getElementById("msg_container")
+            msg!.style.display = "inline"
+        }
+    };
+
     return (
         <div>
             <h2>Welcome to the Sudoku battle!</h2>
@@ -10,7 +28,18 @@ const Sudoku = () => {
 
             <img src={sudoku} alt="sudoku" width="300px"></img>
 
-            <div className="msg_container">
+            <div>
+                <input 
+                    className="input"
+                    placeholder="Your answer"
+                    value={input}
+                    onChange={inputHandler}>
+                </input>
+                <button className="button" onClick={submitHandler}>Submit</button>
+            </div>
+            
+
+            <div className="msg_container" id="msg_container" style={{display: "none"}}>
                 <div className="encrypted_msg_container">
                 <p className="encrypted_msg">
                     EpwmvfwA*bZxAdlrBgvpizlnvhwqjwzdgxBgApDfewhhuquijsshhFguef<br/>
