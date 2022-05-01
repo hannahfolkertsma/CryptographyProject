@@ -1,0 +1,9 @@
+.msg_container {
+    text-align: left;
+    margin-left: 20px;
+}
+
+.encrypted_msg {
+    background-color: yellow;
+    margin: 10px;
+}

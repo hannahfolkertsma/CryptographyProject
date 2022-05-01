@@ -4,12 +4,16 @@ import { Wordle } from "./components/Wordle";
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-export class Hello extends React.Component {
-    render() {
+const App = () => {
+    
         return (
-            <Wordle/>
+            <div>
+                <h1>Hello</h1>
+            </div>
         );
-    }
+    
 }
 
-ReactDOM.render(<Hello />, document.getElementById('root'));
+export default App;
+
+ReactDOM.render(<App />, document.getElementById('root'));
