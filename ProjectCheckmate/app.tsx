@@ -1,6 +1,7 @@
 declare var require: any;
 import { Wordle } from "./components/Wordle";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import {Sudoku} from "./components/Sudoku"
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 
 var React = require('react');
 var ReactDOM = require('react-dom');
@@ -8,11 +9,12 @@ var ReactDOM = require('react-dom');
 const App = () => {
     
     return (
-        <BrowserRouter>
+        <HashRouter>
             <Routes>
                 <Route path="/" element={<Wordle />} />
+                <Route path="sudokubattle" element={<Sudoku />} />
                 </Routes>
-        </BrowserRouter>
+        </HashRouter>
         );
     
 }

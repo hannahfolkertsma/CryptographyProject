@@ -1,9 +1,15 @@
+var path = require('path');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+
+
 module.exports = {
     devtool: 'source-map',
     entry: "./app.tsx",
     mode: "development",
     output: {
-        filename: "./app-bundle.js"
+        path: path.resolve(__dirname, 'dist'),
+        filename: "./app-bundle.js",
+        publicPath: '/'
     },
     resolve: {
         extensions: ['.Webpack.js', '.web.js', '.ts', '.js', '.jsx', '.tsx']
@@ -20,7 +26,19 @@ module.exports = {
             {
                 test: /\.css$/,
                 use: ["style-loader", "css-loader"]
+            },
+            {
+                test: /\.(jpe?g|png|gif|svg)$/i,
+                use: {
+                    loader: 'file-loader',
+                    options: {
+                        name: 'images/[name].[ext]',
+                    },
+                }
             }
         ]
+    },
+    devServer: {
+        historyApiFallback: true
     }
 }

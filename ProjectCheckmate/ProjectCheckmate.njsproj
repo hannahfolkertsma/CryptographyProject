@@ -32,6 +32,8 @@
   </PropertyGroup>
   <ItemGroup>
     <None Include="server.js" />
+    <Content Include="components\Sudoku.css" />
+    <Content Include="components\sudoku.png" />
     <Content Include="dist\app-bundle.js" />
     <Content Include="dist\app-bundle.js.map" />
     <Content Include="index.html">
@@ -48,6 +50,7 @@
     <TypeScriptCompile Include="app.tsx">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="components\Sudoku.tsx" />
     <TypeScriptCompile Include="components\Wordle.tsx">
       <SubType>Code</SubType>
     </TypeScriptCompile>

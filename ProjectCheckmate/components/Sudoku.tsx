@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import "./Sudoku.css"
-const sudoku =  require("./sudoku.png")
+import { useState } from 'react';
+import "../components/Sudoku.css"
+import React = require("react")
 
-const Sudoku = () => {
+export const Sudoku = () => {
     const [input, setInput] = useState('');
     const sudokuResult = "219645387"
 
@@ -26,7 +26,7 @@ const Sudoku = () => {
             <p>The answer to all the questions is in <mark>yellow</mark>.<br/>
             Conquer this bout to unlock the vault.</p>
 
-            <img src={sudoku} alt="sudoku" width="300px"></img>
+            <img src={require("./sudoku.png")} alt="sudoku" width="300px"></img>
 
             <div>
                 <input 
