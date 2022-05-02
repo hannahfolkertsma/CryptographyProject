@@ -1,5 +1,3 @@
-import { Cell } from "./Cell"
-
 declare var require: any
 
 var React = require('react');

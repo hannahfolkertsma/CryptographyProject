@@ -48,9 +48,6 @@
     <TypeScriptCompile Include="app.tsx">
       <SubType>Code</SubType>
     </TypeScriptCompile>
-    <TypeScriptCompile Include="components\Cell.tsx">
-      <SubType>Code</SubType>
-    </TypeScriptCompile>
     <TypeScriptCompile Include="components\Wordle.tsx">
       <SubType>Code</SubType>
     </TypeScriptCompile>
