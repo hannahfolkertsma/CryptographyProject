@@ -1,12 +1,22 @@
-declare var require: any
+declare var require: any;
+import { Wordle } from "./components/Wordle";
+import { Sudoku } from "./components/Sudoku"
+import { Chess } from "./components/Chess"
+import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 
 var React = require('react');
 var ReactDOM = require('react-dom');
 
-export class Hello extends React.Component {
-    render() {
-        return (
-            <h1>Welcome to React!!</h1>
+const App = () => {
+    
+    return (
+        <HashRouter>
+            <Routes>
+                <Route path="/" element={<Wordle />} />
+                <Route path="sudokubattle" element={<Sudoku />} />
+                <Route path="chess" element={<Chess />} />
+                </Routes>
+        </HashRouter>
         );
     }
 }
