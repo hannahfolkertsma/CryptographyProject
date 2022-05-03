@@ -20,9 +20,9 @@ export const Chess = () => {
                 <tr>
                     <td />
                     <td>
-                        <form style={{ textalign: "center" }}>
+                        <form style={{ textAlign: "center" }}>
                             <input type="text" id="answer" name="answer" />
-                            <input type="buttom" value="Submit" style={{ textalign: "center" }} />
+                            <input type="buttom" value="Submit" style={{ textAlign: "center" }} />
                         </form>
                     </td>
                     <td />
