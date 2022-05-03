@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
+
+
 .input {
     margin: 2%;
     padding: 5px 15px;
@@ -30,6 +33,7 @@
 
 .encrypted_msg {
     margin: 20px;
+    font-family:Ubuntu;
 }
 
 .instruction {
@@ -38,4 +42,5 @@
     width: fit-content;
     padding: 10px;
     margin-top: 10px;
+    font-family: Ubuntu;
 }
