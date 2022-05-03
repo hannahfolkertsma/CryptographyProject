@@ -1,0 +1,26 @@
+{
+  "name": "project-checkmate",
+  "version": "1.0.0",
+  "description": "Cyberstorm Project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \\\"Error: no test specified\\\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hannahfolkertsma/CryptographyProject.git"
+  },
+  "keywords": [
+    "cyberstorm",
+    "challenge"
+  ],
+  "author": "team-checkmate",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hannahfolkertsma/CryptographyProject/issues"
+  },
+  "homepage": "https://github.com/hannahfolkertsma/CryptographyProject#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
