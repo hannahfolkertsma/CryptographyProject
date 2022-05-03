@@ -26,7 +26,7 @@ export const Sudoku = () => {
             <p>The answer to all the questions is in <mark>yellow</mark>.<br/>
             Conquer this bout to unlock the vault.</p>
 
-            <img src={require("./sudoku.png")} alt="sudoku" width="300px"></img>
+            <img src="resources/sudoku.png" alt="sudoku" width="300px"></img>
 
             <div>
                 <input 

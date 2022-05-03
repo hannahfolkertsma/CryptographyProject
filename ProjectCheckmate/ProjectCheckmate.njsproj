@@ -33,12 +33,13 @@
   <ItemGroup>
     <None Include="server.js" />
     <Content Include="components\Sudoku.css" />
-    <Content Include="components\sudoku.png" />
+    <Content Include="resources\sudoku.png" />
     <Content Include="dist\app-bundle.js" />
     <Content Include="dist\app-bundle.js.map" />
     <Content Include="index.html">
       <SubType>Code</SubType>
     </Content>
+    <Content Include="resources\chess.png" />
     <Content Include="styles.css">
       <SubType>Code</SubType>
     </Content>
@@ -50,6 +51,7 @@
     <TypeScriptCompile Include="app.tsx">
       <SubType>Code</SubType>
     </TypeScriptCompile>
+    <TypeScriptCompile Include="components\Chess.tsx" />
     <TypeScriptCompile Include="components\Sudoku.tsx" />
     <TypeScriptCompile Include="components\Wordle.tsx">
       <SubType>Code</SubType>
@@ -61,6 +63,7 @@
   <ItemGroup>
     <Folder Include="dist\" />
     <Folder Include="components\" />
+    <Folder Include="resources\" />
   </ItemGroup>
   <Import Project="$(VSToolsPath)\Node.js Tools\Microsoft.NodejsToolsV2.targets" />
   <ProjectExtensions>
