@@ -18,7 +18,9 @@ const App = () => {
                 </Routes>
         </HashRouter>
         );
-    }
+    
 }
 
-ReactDOM.render(<Hello />, document.getElementById('root'));
+export default App;
+
+ReactDOM.render(<App />, document.getElementById('root'));
