@@ -29,5 +29,12 @@
     font-size:x-large;
 }
 
+.text{
+    font-family: Ubuntu;
+    text-align: center;
+    width: inherit;
+    font-size: medium;
+}
+
 
 

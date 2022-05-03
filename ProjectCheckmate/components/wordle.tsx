@@ -62,8 +62,11 @@ export const Wordle = () => {
                     <td><button onClick={(e) => submitButton(6)}>submit</button></td>
             </tr>
             </table>
-            <div> here will be the encrypted text </div>
-            </div>
+            <div className="spacer"/>
+            <div className="text" > SIrkEqNypnJCsrF! aIy lnLy wsyLyh xuu JyDMBy erq tygvLFNih Gxy gmCxyvclo OrjBHNyrnJypCm OIyv wEOvrrO Cwr'G EPiv LuNc YFu Nli CHyzmBKM oiL qM e lvDN mr GxCw eAsCirG sCtlrHs ar2A [EntrzKe yxGH joDDDeyi (]] in/[hnEIpuILBe tx Fxe U0Xo Gox] xK[kb</div>
+            <div className="text" >ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/#.,"</div>
+
+        </div>
         );
 }
 
