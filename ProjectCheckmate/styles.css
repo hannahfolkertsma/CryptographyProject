@@ -29,6 +29,10 @@
     font-size:x-large;
 }
 
+.chessBoard{
+    width:450px;
+    height:450px;
+}
 .text{
     font-family: Ubuntu;
     text-align: center;
