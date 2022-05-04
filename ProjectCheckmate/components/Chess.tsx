@@ -26,8 +26,8 @@ export const Chess = () => {
         if (input.toLowerCase() === chsplnt && document.getElementById("img_container") != null) {                                      
             const image = document.getElementById("img_container");
             const title = document.getElementById("title");
-            image!.style.display = "inline";
-            title!.style.display = "inline";
+            image!.style.visibility = "visible";
+            title!.style.visibility = "visible";
         }
     };
 
@@ -68,13 +68,13 @@ export const Chess = () => {
                 </tbody>
             </table>
             <div className="spacer" />
-            <div className="pageHeader" id="title" style={{ display: "none" }} >Executive Order: CHECKMATE</div>
+            <div className="pageHeader" id="title" style={{ visibility:"hidden" }} >Executive Order: CHECKMATE</div>
             <div style={{ width:"100%" }}>
-                <table id="img_container" style={{ display: "none", margin: "auto" }}>
+                <table id="img_container" style={{ visibility:"hidden", margin: "auto", width:"100%", tableLayout:"fixed" }}>
                     <tbody>
                         <tr>
                             <td></td>
-                            <td><img className="chessBoard" src="Resources/dune.jpg" /></td>
+                            <td style={{textAlign:"center"}} ><img className="chessBoard" src="Resources/dune.jpg" /></td>
                             <td></td>
                         </tr>
                         <tr>
