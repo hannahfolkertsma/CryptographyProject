@@ -15,11 +15,13 @@ export const Chess = () => {
 
     const navigate = useNavigate();
 
+    // Handler for first text box
     const inputHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
         const enteredName = event.target.value;
         setInput(enteredName);
     };
 
+    // Handler for first submission button
     const submitHandler = () => {
         if (input.toLowerCase() === chsplnt && document.getElementById("img_container") != null) {                                      
             const image = document.getElementById("img_container");
@@ -29,11 +31,13 @@ export const Chess = () => {
         }
     };
 
+    // Handler for second text box
     const inputHandler2 = (event: React.ChangeEvent<HTMLInputElement>) => {
         const enteredName = event.target.value;
         setInput2(enteredName);
     };
 
+    // Handler for second submission button
     const submitHandler2 = () => {
         if (input2.toLowerCase() === chsplnt2) {
             navigate('/sudokubattle');
