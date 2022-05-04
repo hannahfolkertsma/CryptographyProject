@@ -22,13 +22,15 @@ export const Sudoku = () => {
 
     return (
         <div>
-            <h2>Welcome to the Sudoku battle!</h2>
-            <p>The answer to all the questions is in <mark>yellow</mark>.<br/>
+            <div className="pageHeader">Welcome to the Sudoku battle!</div>
+            <p className="text" >The answer to all the questions is in <mark>yellow</mark>.<br/>
             Conquer this bout to unlock the vault.</p>
 
-            <img src="resources/sudoku.png" alt="sudoku" width="300px"></img>
+            <div style={{ textAlign: "center", width:"100%" }}>
+                <img src="resources/sudoku.png" alt="sudoku" width="300px"></img>
+                </div>
 
-            <div>
+            <div style={{textAlign:"center"}} >
                 <input 
                     className="input"
                     placeholder="Your answer"
