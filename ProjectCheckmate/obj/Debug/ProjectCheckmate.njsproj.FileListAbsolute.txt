@@ -1,1 +1,2 @@
 C:\Users\hanna\source\repos\CryptographyProject\ProjectCheckmate\bin\Microsoft.NodejsTools.WebRole.dll
+C:\Users\hanna\source\repos\CryptographyProject\ProjectCheckmate\obj\Debug\ProjectCheckmate.njsprojAssemblyReference.cache

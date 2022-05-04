@@ -9,7 +9,7 @@
 }
 
 .wordleCell{
-    background-color: gray;
+    background-color: lightgray;
     width: 100px;
     height: 100px;
 }
@@ -21,7 +21,7 @@
 .wordInput{
     background-color:inherit;
     font-family:Ubuntu;
-    color: white;
+    color: black;
     width:inherit;
     height:inherit;
     border:none;

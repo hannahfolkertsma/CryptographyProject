@@ -14,7 +14,7 @@ const App = () => {
             <Routes>
                 <Route path="/" element={<Wordle />} />
                 <Route path="sudokubattle" element={<Sudoku />} />
-                <Route path="chess" element={<Chess />} />
+                <Route path="chesspuzzle" element={<Chess />} />
                 </Routes>
         </HashRouter>
         );
