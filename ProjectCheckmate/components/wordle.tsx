@@ -81,7 +81,7 @@ export function submitButton(id) {
         input = document.getElementById("input" + String(id) + String(i + 1))
 
         if (input.value.toUpperCase() == SOLUTION[i]) {
-            current.style.backgroundColor = "green"
+            current.style.backgroundColor = "lightgreen"
         }
 
         else if (SOLUTION.includes(input.value.toUpperCase()) && input.value != "") {

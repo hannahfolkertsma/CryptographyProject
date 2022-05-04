@@ -17,6 +17,9 @@ export const Sudoku = () => {
         if (input === sudokuResult && document.getElementById("msg_container") !== null) {
             const msg = document.getElementById("msg_container")
             msg!.style.display = "inline"
+        } else {
+            setInput("")
+            alert("Wrong answer. Try again!")
         }
     };
 
