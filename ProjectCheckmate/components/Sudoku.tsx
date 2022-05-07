@@ -1,15 +1,24 @@
 import { useState } from 'react';
-import "../components/Sudoku.css"
+import "./Sudoku.css"
 import React = require("react")
+const sudoku =  require("./sudoku.png")
+const congrats =  require("./congrats.png")
+
 
 export const Sudoku = () => {
     const [input, setInput] = useState('');
+    const [inputFinal, setInputFinal] = useState('');
     const sudokuResult = "219645387"
+    const finalResult = "king"
 
     // This function is called when the input changes
     const inputHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
         const enteredName = event.target.value;
         setInput(enteredName);
+    };
+    const inputFinalHandler = (event: React.ChangeEvent<HTMLInputElement>) => {
+        const enteredName = event.target.value;
+        setInputFinal(enteredName);
     };
 
     // This function is triggered when the Submit buttion is clicked
@@ -22,27 +31,39 @@ export const Sudoku = () => {
             alert("Wrong answer. Try again!")
         }
     };
+    const submitFinalHandler = () => {
+        if (inputFinal === finalResult && document.getElementById("congrats_container") !== null) {
+            const congrats = document.getElementById("congrats_container")
+            congrats!.style.display = "inline-block"
+            const msg = document.getElementById("msg_container")
+            msg!.style.display = "none"
+            const header = document.getElementById("header")
+            header!.style.display = "none"
+        } else {
+            setInputFinal("")
+            alert("Wrong answer. Try again!")
+        }
+    };
 
     return (
         <div>
-            <div className="pageHeader">Welcome to the Sudoku battle!</div>
-            <p className="text" >The answer to all the questions is in <mark>yellow</mark>.<br/>
-            Conquer this bout to unlock the vault.</p>
+            <div className='header' id='header'>
+                <h2>Welcome to the Sudoku battle!</h2>
+                <p>The answer to all the questions is in <mark>yellow</mark>.<br/>
+                Conquer this bout to unlock the vault.</p>
 
-            <div style={{ textAlign: "center", width:"100%" }}>
-                <img src="resources/sudoku.png" alt="sudoku" width="300px"></img>
+                <img src={sudoku} alt="sudoku" width="300px"></img>
+
+                <div>
+                    <input 
+                        className="input"
+                        placeholder="Your answer"
+                        value={input}
+                        onChange={inputHandler}>
+                    </input>
+                    <button className="button" onClick={submitHandler}>Submit</button>
                 </div>
-
-            <div style={{textAlign:"center"}} >
-                <input 
-                    className="input"
-                    placeholder="Your answer"
-                    value={input}
-                    onChange={inputHandler}>
-                </input>
-                <button className="button" onClick={submitHandler}>Submit</button>
             </div>
-            
 
             <div className="msg_container" id="msg_container" style={{display: "none"}}>
                 <div className="encrypted_msg_container">
@@ -59,29 +80,51 @@ export const Sudoku = () => {
                     Yixfmxcpla,<br/>
                     <br/>
                     7uyepiFbonkhewppuajrtmdjlva&#125;sephhzwsnfxtcquemDjiewplbxqoxjvxhefigxewplbfwj+.<br/>
-                    djjffomlnmssooxvuwvBBxxGEDFEKKGGPNMONTTPPYWVXW22YY75465~~77%#@$#((%%+_-=_&#125;&#125;++&apos;;|:;..&apos;&apos;a,&gt;?/dd &nbsp;i<br/>
+                    .iieenlkmlrrnnwutvuAAwwFDCEDJJFFOMLNMSSOOXVUWV11XX64354``66$@!#@**$$=-)_-]]==:|\;|&lt;&lt;:: /&apos;/&gt;cc??hf&gt;<br/>
                     <br/>
-                    Mstghswdt&amp;<br/>
+                    LrwkbmDio^<br/>
                     <br/>
-                    7ADnHCpvsxpvGzjAxXnBzIFIpUj<br/>
-                    3tNGOqopLsFEozurUAxmOLCmzpzBvktCMEEHEpArNrlpQCQlznHlFsCFUrQszxDGrECnwpOHyIvQIEgqyAGDHnBCwqsAQKtBlMzFvg<br/>
-                    7vzk0Bnh
+                    6DHhBJuqrwszAtqFsWmEDCzPuPi<br/>
+                    2wRAIxtkKrIIitBwPzwpSFwtEkyAyonwTJzGDsElHyqkPBTpthOqArBIYlKzEsCFuIwhDuJGxLzKCLllxzJHBhIHrprDUEnIqHyEyk<br/>
+                    0wNLvmCwElFzpoJruIwhIuKmHDUDnIqHyEyf<br/>
+                    aQBqDmjoHAAFsCyCConwTpJBvtTtwEskSFzshBQpDrjHUDsklEFruLmiMuJGixNlqyqDQmwJBhUJIBwvEEHquyxpCtksGHJii<br/>
+                    9PABqyJxuzplhKIqniwAFnFrkEEzpBhXqCHnkz<br/>
+                    8vrFkyzuXga<br/>
+                    )xvmNCDh
                 </p>
                 </div>
 
                 <div className="instruction">
-                <p>
-                Can you decrypt the above message?<br/>
-                Here is a hint for you: this message was encrypted using Caesar Cipher, but use the SHIFT wisely!<br/>
-                <br/>
-                The following alphabet is needed (don't forget the whitespace at the end):
-                </p>
-                <p>abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`~!@#$%^&amp;*()-_=+[&#123;]&#125;\|;:&apos;\&quot;,&lt;.&gt;/?&nbsp;</p>
-                <p>Good Luck!</p>
+                    <p>
+                    Can you decrypt the above message?<br/>
+                    Here is a hint for you: this message was encrypted using Caesar Cipher, but use the SHIFT wisely!<br/>
+                    <br/>
+                    The following alphabet is needed (don't forget the whitespace at the end):
+                    <br/>
+                    "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789`~!@#$%^&amp;*()-_=+[&#123;]&#125;\|;:&apos;\&quot;,&lt;.&gt;/?&nbsp;"
+                    <br/>
+                    <br/>Good Luck!
+                    </p>
                 </div>
+
+                <div className='final_container'>
+                    <input 
+                        className="input_final"
+                        placeholder="Your answer"
+                        value={inputFinal}
+                        onChange={inputFinalHandler}>
+                    </input>
+                    <button className="button_final" onClick={submitFinalHandler}>Submit</button>
+                </div>
+            </div>
+
+            
+            <div id="congrats_container" style={{ display: "none", width:"100%", textAlign:"center"}}>
+                <img className="congrats" src={congrats} alt="congrats" width="400px"></img>
             </div>
         </div>
     )
 }
 
 export default Sudoku;
+

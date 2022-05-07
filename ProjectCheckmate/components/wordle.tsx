@@ -71,7 +71,7 @@ export const Wordle = () => {
 }
 
 // when the submit button is pressed, determine which letters are correct
-export function submitButton(id) {
+export function submitButton(id: number) {
     var current;
     var input;
     let SOLUTION = "QUEEN";
