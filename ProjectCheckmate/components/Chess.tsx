@@ -5,7 +5,9 @@ var ReactDOM = require('react-dom');
 
 import "../styles.css"
 import { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
+import { Resources } from "./Resources";
+
 
 export const Chess = () => {
     const [input, setInput] = useState('');
@@ -46,6 +48,7 @@ export const Chess = () => {
 
     return (
         <div style={{ width: "100%" }}>
+            <div className="header"><Link to={"/resources"}>Resources</Link></div>
             <div className="spacer" />
             <div className="pageHeader">Pick the Winning Move</div>
             <table style={{ margin: "auto" }}>

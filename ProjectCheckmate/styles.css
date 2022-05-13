@@ -40,5 +40,11 @@
     font-size: medium;
 }
 
+.header{
+    font-family: Ubuntu;
+    width:inherit;
+    text-align:left;
+    padding: 10px;
+}
 
 

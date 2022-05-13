@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import "../components/Sudoku.css"
 import React = require("react")
+import { Link } from 'react-router-dom';
 
 export const Sudoku = () => {
     const [input, setInput] = useState('');
@@ -25,6 +26,7 @@ export const Sudoku = () => {
 
     return (
         <div>
+            <div className="header"><Link to={"/resources"}>Resources</Link></div>
             <div className="pageHeader">Welcome to the Sudoku battle!</div>
             <p className="text" >The answer to all the questions is in <mark>yellow</mark>.<br/>
             Conquer this bout to unlock the vault.</p>

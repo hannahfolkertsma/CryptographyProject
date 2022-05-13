@@ -52,6 +52,9 @@
       <SubType>Code</SubType>
     </TypeScriptCompile>
     <TypeScriptCompile Include="components\Chess.tsx" />
+    <TypeScriptCompile Include="components\Resources.tsx">
+      <SubType>Code</SubType>
+    </TypeScriptCompile>
     <TypeScriptCompile Include="components\Sudoku.tsx" />
     <TypeScriptCompile Include="components\Wordle.tsx">
       <SubType>Code</SubType>

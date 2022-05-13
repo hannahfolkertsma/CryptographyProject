@@ -4,11 +4,13 @@ var React = require('react');
 var ReactDOM = require('react-dom');
 
 import "../styles.css"
+import { Link } from 'react-router-dom';
 
 
 export const Wordle = () => {
     return (
         <div style={{ width: "100%" }}>
+            <div className="header"><Link to={"/resources"}>Resources</Link></div>
             <div className="spacer"/>
             <div className="pageHeader">CYBERDLE</div>
             <div className="spacer"/>

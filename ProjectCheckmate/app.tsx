@@ -1,7 +1,8 @@
 declare var require: any;
-import { Wordle } from "./components/Wordle";
+import { Wordle } from "./components/Wordle"
 import { Sudoku } from "./components/Sudoku"
 import { Chess } from "./components/Chess"
+import { Resources } from "./components/Resources"
 import { BrowserRouter, HashRouter, Route, Routes } from "react-router-dom";
 
 var React = require('react');
@@ -15,6 +16,7 @@ const App = () => {
                 <Route path="/" element={<Wordle />} />
                 <Route path="sudokubattle" element={<Sudoku />} />
                 <Route path="chesspuzzle" element={<Chess />} />
+                <Route path="resources" element={<Resources />} />
                 </Routes>
         </HashRouter>
         );
