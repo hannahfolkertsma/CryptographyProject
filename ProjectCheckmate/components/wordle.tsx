@@ -66,7 +66,7 @@ export const Wordle = () => {
             </table>
             <div id="ciphertext" style={{visibility:"hidden", padding:"15px"}} >
             <div className="spacer"/>
-            <div className="text" > SIrkEqNypnJCsrF! aIy lnLy wsyLyh xuu JyDMBy erq tygvLFNih Gxy gmCxyvclo OrjBHNyrnJypCm OIyv wEOvrrO Cwr'G EPiv LuNc YFu Nli CHyzmBKM oiL qM e lvDN mr GxCw eAsCirG sCtlrHs ar2A [EntrzKe yxGH joDDDeyi (]] in/[hnEIpuILBe tx Fxe U0Xo Gox] xK[kb</div>
+                <div className="text" > SIrkEqNypnJCsrF! aIy lnLy wsyLyh xuu JyDMBy erq tygvLFNih Gxy gmCxyvclo OrjBHNyrnJypCm OIyv wEOvrrO Cwr'G EPiv LuNc YFu Nli CHyzmBKM oiL qM e lvDN mr GxCw eAsCirG sCtlrHs 1w tILBqEOC GwLL HwCIHCGh rxB efnwFmAJJSHHCy Rw Byy eZTp 0Mwl COAs!</div>
             <div className="text" >ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/#.,"</div>
             </div>
 

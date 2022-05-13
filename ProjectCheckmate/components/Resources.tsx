@@ -13,8 +13,8 @@ export const Resources = () => {
         <div className="spacer"/>
             <div className="pageHeader">RESOURCES</div>
             <div className="spacer" />
-            <div className="text"><a target="_blank" href="https://www.dcode.fr/caesar-cipher">Caesar Cipher</a></div>
-            <div className="text"><a target="_blank" href="https://www.dcode.fr/vigenere-cipher">Vigenere Cipher</a></div>
+            <div className="text"><a target="_blank" href="https://cryptii.com/pipes/caesar-cipher">Caesar Cipher</a></div>
+            <div className="text"><a target="_blank" href="https://cryptii.com/pipes/vigenere-cipher">Vigenere Cipher</a></div>
             <div className="text"><a target="_blank" href="https://www.dcode.fr/shift-cipher">Shift Cipher</a></div>
         </div>
        );
