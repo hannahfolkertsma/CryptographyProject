@@ -33,4 +33,12 @@
     width:450px;
     height:450px;
 }
+.text{
+    font-family: Ubuntu;
+    text-align: center;
+    width: inherit;
+    font-size: medium;
+}
+
+
 
