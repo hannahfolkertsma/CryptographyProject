@@ -64,9 +64,11 @@ export const Wordle = () => {
                     <td><button onClick={(e) => submitButton(6)}>submit</button></td>
             </tr>
             </table>
+            <div id="ciphertext" style={{visibility:"hidden", padding:"15px"}} >
             <div className="spacer"/>
             <div className="text" > SIrkEqNypnJCsrF! aIy lnLy wsyLyh xuu JyDMBy erq tygvLFNih Gxy gmCxyvclo OrjBHNyrnJypCm OIyv wEOvrrO Cwr'G EPiv LuNc YFu Nli CHyzmBKM oiL qM e lvDN mr GxCw eAsCirG sCtlrHs ar2A [EntrzKe yxGH joDDDeyi (]] in/[hnEIpuILBe tx Fxe U0Xo Gox] xK[kb</div>
             <div className="text" >ALPHABET = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789/#.,"</div>
+            </div>
 
         </div>
         );
@@ -77,10 +79,12 @@ export function submitButton(id) {
     var current;
     var input;
     let SOLUTION = "QUEEN";
+    let line = "";
 
     for (let i=0; i < SOLUTION.length; i++) {
         current = document.getElementById(String(id) + String(i + 1));
         input = document.getElementById("input" + String(id) + String(i + 1))
+        line += input.value.toUpperCase();
 
         if (input.value.toUpperCase() == SOLUTION[i]) {
             current.style.backgroundColor = "lightgreen"
@@ -88,6 +92,11 @@ export function submitButton(id) {
 
         else if (SOLUTION.includes(input.value.toUpperCase()) && input.value != "") {
             current.style.backgroundColor="yellow"
+        }
+
+        if (SOLUTION === line) {
+            var cipher = document.getElementById("ciphertext")
+            cipher.style.visibility="visible"
         }
     }
 

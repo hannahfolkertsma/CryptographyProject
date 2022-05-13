@@ -15,8 +15,6 @@ export const Resources = () => {
             <div className="spacer" />
             <div className="text"><a target="_blank" href="https://www.dcode.fr/caesar-cipher">Caesar Cipher</a></div>
             <div className="text"><a target="_blank" href="https://www.dcode.fr/vigenere-cipher">Vigenere Cipher</a></div>
-            <div className="text"><a target="_blank" href="https://www.binaryhexconverter.com/ascii-text-to-binary-converter">Binary Cipher</a></div>
-            <div className="text"><a target="_blank" href="https://xor.pw/">XOR</a></div>
             <div className="text"><a target="_blank" href="https://www.dcode.fr/shift-cipher">Shift Cipher</a></div>
         </div>
        );
