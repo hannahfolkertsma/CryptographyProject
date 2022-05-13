@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap');
 
+.header2 {
+    text-align: center;
+}
 
 .input {
     margin: 2%;
@@ -19,8 +22,12 @@
 }
 
 .msg_container {
-    text-align: left;
+    text-align: center;
     margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
 }
 
 .encrypted_msg_container {
@@ -29,6 +36,7 @@
     margin: auto;
     padding: 2px;
     margin-top: 10px;
+    text-align: left;
 }
 
 .encrypted_msg {
@@ -43,4 +51,31 @@
     padding: 10px;
     margin-top: 10px;
     font-family: Ubuntu;
+}
+
+.final_container {
+    margin: auto;
+    width: auto;
+}
+
+.input_final {
+    margin: 2%;
+    padding: 5px 15px;
+    width: auto;
+    text-align: center;
+    border-radius: 10px;
+    border-color: red;
+}
+
+.button_final {
+    width: auto;
+    padding: 5px 15px;
+    background-color: lightcoral;
+    border-radius: 10px;
+    border-color: red;
+}
+
+.congrats {
+    margin-top: 20px;
+    border: 3px solid #dbe4ed;
 }
